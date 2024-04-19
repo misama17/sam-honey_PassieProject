@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Book Club</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <img src="image/logo.png" alt="Logo van de Book Club">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="boek.html">Boek</a></li>
+                <li><a href="animaties.html">Animaties</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="video_container">
+            <video autoplay loop muted class="intro_filmpje">
+                <source src="image/introductie_filmpje.mp4" type="video/mp4">
+            </video>
+            <div id="overlay_block"></div>
+        </section>
+        <div class="overlay_intro_link">
+            <a href="https://www.youtube.com/watch?v=VBI4EFbwnbw">Klik <strong>hier</strong> voor de hele video!</a>
+        </div>
+        <div class="overlay_intro">
+            <a href="#bottom">Scroll naar beneden!</a>
+        </div>
+
+        <section id="bottom" class="box">
+            <h1>Hoe wil je het boek bekijken?</h1>
+            <div class="flexbox1">
+                <a href="boek.html">
+                    <div class="icon">
+                        <img class="image_boek" src="image/boek_online2.png" alt="Icon Boek">
+                    </div>
+                    <p>Met verhaal</p>
+                </a>
+                <a href="animaties.html">
+                    <div class="icon">
+                        <img class="image_animaties" src="image/animatie_online2.png" alt="Icon Animaties">
+                    </div>
+                    <p>Zonder verhaal</p>
+                </a>
+            </div>
+        </section>
+    </main>
+</body>

@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Nunito','Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #262626;
+    background-color: #FDDE7E;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 100px 0 75px 0;
+    font-size: 3em;
+}
+
+header nav {
+    display: flex;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 25px 10px 10px;
+    overflow: hidden;
+}
+
+nav img {
+    width: 100px;
+    height: auto;
+    padding: 5px 0 5px 25px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    color: #262626;
+    padding: 0 40px;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+li a:hover {
+    color: #FDDE7E;
+}
+
+.intro_filmpje {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+}
+
+.video_container {
+    position: relative;
+    width: 100%;
+}
+
+#overlay_block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay_intro_link a {
+    font-family: 'Nunito','Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 400;
+    position: absolute;
+    text-decoration: none;
+    right: 35%;
+    bottom: 575px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 150px;
+    width: 475px;
+    text-align: center;
+}
+
+.overlay_intro_link {
+    animation: bounce 1s ease-in-out infinite;
+    animation-delay: 30s;
+    z-index: 1;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.overlay_intro_link:hover a {
+    font-size: 1.4em;
+    transition: smooth;
+    background-color: rgb(253, 222, 126, 0.90);
+    width: 475px;
+}
+
+.overlay_intro a {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+    position: absolute;
+    text-decoration: none;
+    right: 75px;
+    bottom: 120px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 150px;
+    width: 250px;
+    text-align: center;
+}
+
+.overlay_intro {
+    animation: bounce 1s ease-in-out infinite;
+    animation-delay: 5s;
+    z-index: 1;
+}
+
+.overlay_intro:hover a {
+    font-size: 1.1em;
+    transition: smooth;
+    background-color: rgb(253, 222, 126, 0.90);
+    width: 275px;
+}
+
+.intro_tekst {
+    text-align: center;
+    margin: 0 200px 0 200px;
+    font-size: 1.2em;
+}
+
+.outro_tekst {
+    text-align: center;
+    margin: 0 200px 0 200px;
+    font-size: 1.2em;
+    margin-bottom: 75px;
+}
+
+.flexcontainer2 {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    margin: 125px 25px 125px 25px;
+    padding: 100px 0 100px 0;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.flexcontainer2 p {
+    margin-right: 110px;
+    line-height: 50px;
+    background-color: white;
+}
+
+.flexcontainer3 {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    margin: 125px 25px 125px 25px;
+    padding: 100px 0 100px 0;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.flexcontainer3 p {
+    margin-left: 110px;
+    line-height: 50px;
+    background-color: white;
+}
+
+video {
+    width: 65%;
+    background-color: white;
+}
+
+.flexcontainer5 {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    margin: 125px 25px 125px 25px;
+    padding: 100px 0 100px 0;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.flexcontainer5 p {
+    margin-left: 110px;
+    margin-right: 110px;
+    line-height: 50px;
+    background-color: white;
+}
+
+.flexcontainer5 video {
+    width: 25%;
+    background-color: white;
+}
+
+.box {
+    display: block;
+    width: 100%;
+    height: 850px;
+}
+
+.flexbox1 {
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox1 p {
+    text-transform: uppercase;
+}
+
+.flexbox1 img {
+    width: 350px;
+    height: auto;
+}
+
+.icon {
+    position: relative;
+    margin: 50px 100px 25px 100px;
+    width: 350px;
+    height: 350px;
+    background: white;
+    transition: 1s box-shadow;
+    border-radius: 200px;
+}
+
+.icon:hover::before {
+    z-index: -1;
+    display: block;
+    content: '';
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background: #262626;
+    border-radius: 150px;
+    animation: 1s clockwise infinite;
+}
+
+.icon:hover {
+    box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes clockwise {
+    0% {
+      top: -5px;
+      left: 0;
+    }
+    12% {
+      top: -5px;
+      left: 5px;
+    }
+    25% {
+      top: 0;
+      left: 5px;    
+    }
+    37% {
+      top: 5px;
+      left: 5px;
+    }
+    50% {
+      top: 5px;
+      left: 0;    
+    }
+    62% {
+      top: 5px;
+      left: -5px;
+    }
+    75% {
+      top: 0;
+      left: -5px;
+    }
+    87% {
+      top: -5px;
+      left: -5px;
+    }
+    100% {
+      top: -5px;
+      left: 0;    
+    }
+}
+
+.flexbox1 p {
+    text-align: center;
+}
+
+.flexbox1 a {
+    text-decoration: none;
+    color: #262626;
+}
+
+.animatie video {
+    width: 100vw;
+    margin-bottom: 100px;
+}
+
+.animatie2 video {
+    width: 45vw;
+    margin: 0 0 100px 500px;
+}
+
+.animatie_intro video {
+    width: 80vw;
+    margin: 50px 50px 55px 160px;
+}
+
+.animatie_intro2 video {
+    width: 50vw;
+    background-color: white;
+    padding: 75px;
+    border-radius: 15px;
+    margin: 50px 0 0 350px;
+}
+
+.flexcontainer4{
+    background: white;
+}
